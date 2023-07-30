@@ -1,0 +1,26 @@
+{
+  "name": "proman-1.0.0",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rummu/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rummu/Portfolio/issues"
+  },
+  "homepage": "https://github.com/rummu/Portfolio#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "emailjs": "^4.0.2"
+  }
+}

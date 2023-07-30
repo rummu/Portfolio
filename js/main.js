@@ -151,3 +151,25 @@ $('#portfolio-flters li').on('click', function () {
     
 })(jQuery);
 
+
+
+
+// main.js
+// Initialize EmailJS with your user ID
+// require('dotenv').config()
+// const emailjs = require('emailjs')
+
+// const handleSubmit = (formData) => {
+
+
+
+// emailjs.send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, formData,{
+//     from_name:,
+//     to_name:,
+//     from_email:,
+//     to_email:,
+//     message:,
+// },process.env.EMAILJS_PUBLIC_KEY).then(()=>window.alert('Success!'), (err)=>{
+//     window.alert('Failed!')
+// })
+// }
