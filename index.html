@@ -2,109 +2,111 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Personal Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+  <meta charset="utf-8">
+  <title>Personal Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Icon Font Stylesheet -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Template Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
+  <!-- Spinner Start -->
+  <div id="spinner"
+    class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+      <span class="sr-only">Loading...</span>
     </div>
-    <!-- Spinner End -->
+  </div>
+  <!-- Spinner End -->
 
 
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
-        data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <!-- <h1 class="text-primary fw-bold m-0">ProMan</h1> -->
-        </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
-            <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Home</a>
-                <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#skill" class="nav-item nav-link">Skills</a>
-                <a href="#service" class="nav-item nav-link">Experience</a>
-            </div>
-            <!-- <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn"
+    data-wow-delay="0.1s">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+      <!-- <h1 class="text-primary fw-bold m-0">ProMan</h1> -->
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+      <div class="navbar-nav ms-auto py-0">
+        <a href="#home" class="nav-item nav-link active">Home</a>
+        <a href="#about" class="nav-item nav-link">About</a>
+        <a href="#skill" class="nav-item nav-link">Skills</a>
+        <a href="#service" class="nav-item nav-link">Experience</a>
+      </div>
+      <!-- <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
                 <h1 class="text-primary fw-bold m-0">ProMan</h1>
             </a> -->
-            <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projects</a>
-                <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
-                <a href="#contact" class="nav-item nav-link">Contact</a>
-            </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+      <div class="navbar-nav me-auto py-0">
+        <a href="#project" class="nav-item nav-link">Projects</a>
+        <!-- <a href="#testimonial" class="nav-item nav-link">Testimonial</a> -->
+        <a href="#contact" class="nav-item nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
 
 
-    <!-- Header Start -->
-    <div class="container-fluid bg-light my-6 mt-0" id="home">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">I'm</h3>
-                    <h1 class="display-3 mb-3">Rumman Ahmad</h1>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Datascientist , Developer,
-                        Machine Learning Engineer
-                    </div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="https://drive.google.com/file/d/1FDpVX87uWPeCvu6q-KFAZzg7BJthpiFA/view?usp=sharing"
-                            class="btn btn-primary py-3 px-4 me-5">Resume</a>
-                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
+  <!-- Header Start -->
+  <div class="container-fluid bg-light my-6 mt-0" id="home">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6 py-6 pb-0 pt-lg-0">
+          <h3 class="text-primary mb-3">I'm</h3>
+          <h1 class="display-3 mb-3">Rumman Ahmad</h1>
+          <h2 class="typed-text-output d-inline"></h2>
+          <div class="typed-text d-none">Datascientist , Developer,
+            Machine Learning Engineer
+          </div>
+          <div class="d-flex align-items-center pt-5">
+            <a href="https://drive.google.com/file/d/1FDpVX87uWPeCvu6q-KFAZzg7BJthpiFA/view?usp=sharing"
+              class="btn btn-primary py-3 px-4 me-5">Resume</a>
+            <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
                             data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                         <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5> -->
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="img/main.png" alt="">
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="col-lg-6">
+          <img class="img-fluid" src="img/main.png" alt="">
+        </div>
+      </div>
     </div>
-    <!-- Header End -->
+  </div>
+  <!-- Header End -->
 
 
-    <!-- Video Modal Start -->
-    <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <!-- Video Modal Start -->
+  <!-- <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content rounded-0">
                 <div class="modal-header">
@@ -120,49 +122,49 @@
             </div>
         </div>
     </div> -->
-    <!-- Video Modal End -->
+  <!-- Video Modal End -->
 
 
-    <!-- About Start -->
-    <div class="container-xxl py-6" id="about">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="d-flex align-items-center mb-5">
-                        <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">1</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div>
-                        <h3 class="lh-base mb-0">of working experience as a Machine Learning Engineer & a Developer</h3>
-                    </div>
-                    <br class="mb-4">I'm Rumman Ahmad, a dedicated B.Tech student enrolled in Computer Engineering at
-                    the prestigious Jamia Millia Islamia. Currently, I am ardently working as a proficient Machine
-                    Learning Engineer at Nikahforever, where I passionately contribute to the development and deployment
-                    of cutting-edge AI solutions.
-                    <br><br>
-                    Furthermore, I proudly hold the title of a distinguished researcher at Jamia Millia Islamia,
-                    engaging in intellectual pursuits to contribute meaningfully to the field of study.
-                    <br><br>
-                    Apart from academics and tech, I love football for the excitement it brings. I enjoy restful sleep
-                    and exploring the world's beauty.
+  <!-- About Start -->
+  <div class="container-xxl py-6" id="about">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="d-flex align-items-center mb-5">
+            <div class="years flex-shrink-0 text-center me-4">
+              <h1 class="display-1 mb-0">1</h1>
+              <h5 class="mb-0">Years</h5>
+            </div>
+            <h3 class="lh-base mb-0">of working experience as a Machine Learning Engineer & a Developer</h3>
+          </div>
+          <br class="mb-4">I'm Rumman Ahmad, a dedicated B.Tech student enrolled in Computer Engineering at
+          the prestigious Jamia Millia Islamia. Currently, I am ardently working as a proficient Machine
+          Learning Engineer at Nikahforever, where I passionately contribute to the development and deployment
+          of cutting-edge AI solutions.
+          <br><br>
+          Furthermore, I proudly hold the title of a distinguished researcher at Jamia Millia Islamia,
+          engaging in intellectual pursuits to contribute meaningfully to the field of study.
+          <br><br>
+          Apart from academics and tech, I love football for the excitement it brings. I enjoy restful sleep
+          and exploring the world's beauty.
 
 
-                    </p>
-                    <!-- <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
+          </p>
+          <!-- <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Afordable Prices</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>High Quality Product</p>
                     <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p>
                     <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> -->
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/football.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/code.jpg" alt="">
-                        </div>
-                    </div>
-                    <!-- <div class="d-flex align-items-center mb-3">
+        </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+          <div class="row g-3 mb-4">
+            <div class="col-sm-6">
+              <img class="img-fluid rounded" src="img/football.jpg" alt="">
+            </div>
+            <div class="col-sm-6">
+              <img class="img-fluid rounded" src="img/code.jpg" alt="">
+            </div>
+          </div>
+          <!-- <div class="d-flex align-items-center mb-3">
                         <h5 class="border-end pe-3 me-3 mb-0">Happy Clients</h5>
                         <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
                     </div>
@@ -174,712 +176,667 @@
                         <h2 class="text-primary fw-bold mb-0" data-toggle="counter-up">1234</h2>
                     </div>
                     <p class="mb-0">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam amet diam ipsum clita labore dolor duo clita.</p> -->
-                </div>
-            </div>
         </div>
+      </div>
     </div>
-    <!-- About End -->
+  </div>
+  <!-- About End -->
 
 
-    <!-- Expertise Start -->
-    <div class="container-xxl py-6 pb-5" id="skill">
-        <div class="container">
-            <div class="row g-5">
-                <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s"> -->
-                <h1 class="display-5 mb-5">Skills</h1>
-                <h3 class="mb-4">Web Development</h3>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">HTML</h6>
-                                <h6 class="font-weight-bold">95%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">CSS</h6>
-                                <h6 class="font-weight-bold">85%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Javascript</h6>
-                                <h6 class="font-weight-bold">50%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">React </h6>
-                                <h6 class="font-weight-bold">70%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Wordpress</h6>
-                                <h6 class="font-weight-bold">60%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <h3 class="mb-4">Data Science</h3>
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Machine Learning</h6>
-                                <h6 class="font-weight-bold">90%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Deep Learning</h6>
-                                <h6 class="font-weight-bold">80%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-6">
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Computer Vision</h6>
-                                <h6 class="font-weight-bold">60%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <h6 class="font-weight-bold">Natural language Processing </h6>
-                                <h6 class="font-weight-bold">50%</h6>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="50"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
+  <!-- Expertise Start -->
+  <div class="container-xxl py-6 pb-5" id="skill">
+    <div class="container">
+      <div class="row g-5">
+        <!-- <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s"> -->
+        <h1 class="display-5 mb-5">Skills</h1>
+        <h3 class="mb-4">Web Development</h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">HTML</h6>
+                <h6 class="font-weight-bold">95%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
             </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">CSS</h6>
+                <h6 class="font-weight-bold">85%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Javascript</h6>
+                <h6 class="font-weight-bold">50%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">React </h6>
+                <h6 class="font-weight-bold">70%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Wordpress</h6>
+                <h6 class="font-weight-bold">60%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
         </div>
+        <br>
+        <br>
+        <h3 class="mb-4">Data Science</h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Machine Learning</h6>
+                <h6 class="font-weight-bold">90%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Deep Learning</h6>
+                <h6 class="font-weight-bold">80%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Computer Vision</h6>
+                <h6 class="font-weight-bold">60%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+            <div class="skill mb-4">
+              <div class="d-flex justify-content-between">
+                <h6 class="font-weight-bold">Natural language Processing </h6>
+                <h6 class="font-weight-bold">50%</h6>
+              </div>
+              <div class="progress">
+                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                  aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+      </div>
     </div>
-    <!-- Expertise End -->
+  </div>
+  <!-- Expertise End -->
 
 
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Experience</h1>
-                </div>
-                <!-- <div class="col-lg-6 text-lg-end">
+  <!-- Service Start -->
+  <div class="container-fluid bg-light my-5 py-6" id="service">
+    <div class="container">
+      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <h1 class="display-5 mb-0">Experience</h1>
+        </div>
+        <!-- <div class="col-lg-6 text-lg-end">
                     <a class="btn btn-primary py-3 px-5" href="">Hire Me</a>
                 </div> -->
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+            <div class="bg-icon flex-shrink-0 mb-3">
+              <i class="fa fa-crop-alt fa-2x text-dark"></i>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Goalwit Technologies</h4>
-                            <h6 class="mb-3">Machine Learning Engineer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
-                                    class="text-primary">June 2022 - Present</span></h6>
-                            <span>
-                                <ul>
-                                    <li>Experienced Machine Learning Engineer skilled in designing autonomous AI systems
-                                        for automating predictive models.</li>
-                                    <li>Developed a precise model utilizing UnderSampling Technique and ML algorithms to
-                                        predict potential Premium Plan buyers</li>
-                                    <li>Created a Python Ranking System to efficiently target potential profiles,
-                                        considering diverse features. Model successfully deployed on Azure.</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Jamia Research Intern</h4>
-                            <h6 class="mb-3">AI/ML Research Intern &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
-                                    class="text-primary">Oct 2022 - Feb 2023</span></h6>
-                            <span>
-                                <ul>
-                                    <h6><b>Accurate Follicle Detection in PCOS USG Imagery using Skip-Connected
-                                            2D-CNN</b></h6>
-                                    <li>Designed Skip Connections in the 2D-CNN model to improve training efficiency and
-                                        accuracy.</li>
-                                </ul>
-                            </span>
-                            <br>
-                            <span>
-                                <ul>
-                                    <h6><b>Performance Evaluation and Comparison</b></h6>
-                                    <li>Developed a predictive model that leveraged the combined power of LSTM and
-                                        1D-CNN architectures to achieve optimal accuracy.
-                                        Conducted in-depth studies on metabolic disorder PCOS</li>
-                                </ul>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+            <div class="ms-sm-4">
+              <h4 class="mb-3">Goalwit Technologies</h4>
+              <h6 class="mb-3">Machine Learning Engineer &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+                  class="text-primary">June 2022 - Present</span></h6>
+              <span>
+                <ul>
+                  <li>Experienced Machine Learning Engineer skilled in designing autonomous AI systems
+                    for automating predictive models.</li>
+                  <li>Developed a precise model utilizing UnderSampling Technique and ML algorithms to
+                    predict potential Premium Plan buyers</li>
+                  <li>Created a Python Ranking System to efficiently target potential profiles,
+                    considering diverse features. Model successfully deployed on Azure.</li>
+                </ul>
+              </span>
             </div>
+          </div>
         </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Projects Start -->
-    <div class="container-xxl py-6 pt-5" id="project">
-        <div class="container">
-            <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">My Projects</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
-                        <!-- <li class="mx-3 active" data-filter="*">Major Projects</li> -->
-                        <li class="mx-3 active" data-filter=".third">Major Projects</li>
-                        <li class="mx-3" data-filter=".first">GAN Projects</li>
-                        <li class="mx-3" data-filter=".second">CNN Architecture</li>
-                        <li class="mx-3" data-filter=".forth">ML Projects</li>
-                        <li class="mx-3" data-filter=".fifth">Recommendation System</li>
-                    </ul>
-                </div>
+        <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+          <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
+            <div class="bg-icon flex-shrink-0 mb-3">
+              <i class="fa fa-code-branch fa-2x text-dark"></i>
             </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-
-                <div class="col-md-6 portfolio-item first">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">Developed a Deep Convolutional Generative Adversarial Network (DCGAN) using
-                                PyTorch.</h6>
-                            <a href="https://github.com/rummu/Pytorch/blob/main/GAN/DC_GAN/dc-gan.ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>Implemented a custom Generator and Discriminator neural network architecture.</li>
-                                <li>Trained the GAN on the MNIST dataset to generate realistic handwritten digit images.
-                                </li>
-                                <li>Monitored and visualized the training process using TensorBoard.</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/dcganpng.png" width="100%" height="100%" />
-                            </svg>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 portfolio-item first">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">Wasserstein GAN with Gradient Penalty (WGAN-GP) Implementation</h6>
-                            <a href="https://github.com/rummu/dogs_breed_detection">Link</a>
-                            <ul class="mb-0">
-                                <li>Created a unique Generator and Discriminator neural network design from scratch.
-                                </li>
-                                <li>Incorporated the Wasserstein distance as the loss function to improve training
-                                    stability.</li>
-                                <li>Successfully trained the WGAN-GP model for 5 epochs, achieving significant
-                                    improvements in the generated image quality over time.</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/wgan.png" width="100%" height="100%" />
-                            </svg>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 portfolio-item third">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">Implemented a Deep learning model using InceptionV3 architecture to
-                                classify</h6>
-                            <a href="https://github.com/rummu/dogs_breed_detection">Link</a>
-                            <ul class="mb-0">
-                                <li>Developed a deep learning model for dog breed classification by leveraging the
-                                    InceptionV3, architecture.</li>
-                                <li>Implemented a feature extraction function that utilized the InceptionV3 model</li>
-                                <li>Utilized GlobalAveragePooling for feature representation.</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <rect width="100%" height="100%" fill="#55595c"></rect>
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/dogs_breed.jpg" width="100%" height="100%" />
-                            </svg>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 portfolio-item third">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">Facial Recognition-Based Music Recommendation System</h6>
-                            <a
-                                href="https://github.com/rummu/Facial-Recognition-Based-Music-Recommendation-Application">Link</a>
-                            <ul class="mb-0">
-                                <li>Developed a facial expression recognition system using AI (Neural Networks) that
-                                    recommends songs based on detected emotions.
-                                </li>
-                                <li>Upon detecting facial expressions, the system directs users to Spotify to access
-                                    recommended songs. </li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <rect width="100%" height="100%" fill="#55595c"></rect>
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/face_recognition.jpg" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            <div class="ms-sm-4">
+              <h4 class="mb-3">Jamia Research Intern</h4>
+              <h6 class="mb-3">AI/ML Research Intern &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span
+                  class="text-primary">Oct 2022 - Feb 2023</span></h6>
+              <span>
+                <ul>
+                  <h6><b>Accurate Follicle Detection in PCOS USG Imagery using Skip-Connected
+                      2D-CNN</b></h6>
+                  <li>Designed Skip Connections in the 2D-CNN model to improve training efficiency and
+                    accuracy.</li>
+                </ul>
+              </span>
+              <br>
+              <span>
+                <ul>
+                  <h6><b>Performance Evaluation and Comparison</b></h6>
+                  <li>Developed a predictive model that leveraged the combined power of LSTM and
+                    1D-CNN architectures to achieve optimal accuracy.
+                    Conducted in-depth studies on metabolic disorder PCOS</li>
+                </ul>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Service End -->
 
 
+  <!-- Projects Start -->
+  <div class="container-xxl py-6 pt-5" id="project">
+    <div class="container">
+      <div class="row g-5 mb-5 align-items-center wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <h1 class="display-5 mb-0">My Projects</h1>
+        </div>
+        <div class="col-lg-6 text-lg-end">
+          <ul class="list-inline mx-n3 mb-0" id="portfolio-flters">
+            <!-- <li class="mx-3 active" data-filter="*">Major Projects</li> -->
+            <li class="mx-3 active" data-filter=".third">Major Projects</li>
+            <li class="mx-3" data-filter=".first">GAN Projects</li>
+            <li class="mx-3" data-filter=".second">CNN Architecture</li>
+            <li class="mx-3" data-filter=".forth">ML Projects</li>
+            <li class="mx-3" data-filter=".fifth">Recommendation System</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
 
-                <div class="col-md-6 portfolio-item second">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">Deep Learning Model for Handwritten Digit Recognition using InceptionNet
-                            </h6>
-                            <a
-                                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/Inception/inception-cnn-implementation.ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>Implemented the InceptionNet architecture, incorporating custom InceptionBlocks to
-                                    extract hierarchical features from the input images effectively.
-                                </li>
-                                <li>Generated a confusion matrix to analyze the model's performance on individual
-                                    classes and identify potential areas for improvement.</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/inception.jpg" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-6 portfolio-item first">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">Developed a Deep Convolutional Generative Adversarial Network (DCGAN) using
+                PyTorch.</h6>
+              <a href="https://github.com/rummu/Pytorch/blob/main/GAN/DC_GAN/dc-gan.ipynb">Link</a>
+              <ul class="mb-0">
+                <li>Implemented a custom Generator and Discriminator neural network architecture.</li>
+                <li>Trained the GAN on the MNIST dataset to generate realistic handwritten digit images.
+                </li>
+                <li>Monitored and visualized the training process using TensorBoard.</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/dcganpng.png" width="100%" height="100%" />
+              </svg>
 
-                <div class="col-md-6 portfolio-item second">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">Advancing MNIST Digit Recognition with ResNet-based CNNs</h6>
-                            <a
-                                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/Resnet/resnet-cnn-implementation.ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>Utilized the BasicBlock structure to build a robust and efficient CNN model for
-                                    digit recognition
-                                </li>
-                                <li>Utilized the CrossEntropyLoss function as the loss criterion and the Stochastic
-                                    Gradient Descent (SGD) optimizer with momentum for efficient model optimization</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/Resnet.jpg" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            </div>
+          </div>
+        </div>
 
-                <div class="col-md-6 portfolio-item second">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">VGG16-based Convolutional Neural Networks</h6>
-                            <a
-                                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/VGG/vgg-cnn-implementation.ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>Preprocessed the CIFAR-100 dataset with image resizing and normalization.</li>
-                                <li>Achieved a high accuracy rate on the validation set, demonstrating the model's
-                                    effectiveness.</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/VGG.jpg" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-6 portfolio-item first">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">Wasserstein GAN with Gradient Penalty (WGAN-GP) Implementation</h6>
+              <a href="https://github.com/rummu/dogs_breed_detection">Link</a>
+              <ul class="mb-0">
+                <li>Created a unique Generator and Discriminator neural network design from scratch.
+                </li>
+                <li>Incorporated the Wasserstein distance as the loss function to improve training
+                  stability.</li>
+                <li>Successfully trained the WGAN-GP model for 5 epochs, achieving significant
+                  improvements in the generated image quality over time.</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/wgan.png" width="100%" height="100%" />
+              </svg>
 
-                <div class="col-md-6 portfolio-item second">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">MNIST Digit Recognition using EfficientNet </h6>
-                            <a
-                                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/efficientnet/efficientnet-cnn-architecture.ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>Implemented an EfficientNet-based deep learning model for digit recognition.</li>
-                                <li>Achieved high accuracy on the test set, demonstrating the model's effectiveness for
-                                    digit recognition.
-                                    Visualized the confusion matrix to assess model performance.</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/Efficientnet.jpg" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            </div>
+          </div>
+        </div>
 
-                <div class="col-md-6 portfolio-item forth">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">WINEQUALITY PREDICTION </h6>
-                            <a
-                                href="https://github.com/rummu/Winequality_prediction/blob/main/Winequality_prediction%20(1).ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>Predicted the quality of wine using DecisionTreeClassifier</li>
-                                <li>Used PCA for selecting the features,Clustering is done with the help of
-                                    KMeans,DBSCAN and pruning
-                                    the dataset while selecting least ccp_alpha parameter.</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title> -->
-                                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
-                                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/wine.png" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-md-6 portfolio-item third">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">Implemented a Deep learning model using InceptionV3 architecture to
+                classify</h6>
+              <a href="https://github.com/rummu/dogs_breed_detection">Link</a>
+              <ul class="mb-0">
+                <li>Developed a deep learning model for dog breed classification by leveraging the
+                  InceptionV3, architecture.</li>
+                <li>Implemented a feature extraction function that utilized the InceptionV3 model</li>
+                <li>Utilized GlobalAveragePooling for feature representation.</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/dogs_breed.jpg" width="100%" height="100%" />
+              </svg>
 
-                <div class="col-md-6 portfolio-item forth">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">PREDICTING DIABETES</h6>
-                            <a
-                                href="https://github.com/rummu/Diabetes_Prediction/blob/main/Diabetes_prediction.ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>Made a model using ML algorithm which has been trained and tested using
-                                    model_selection module</li>
-                                <li>Converted the dataset into standard value using standardization method . Predicted
-                                    the tested value
-                                    which gives an accuracy of 80%</li>
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 portfolio-item third">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">Facial Recognition-Based Music Recommendation System</h6>
+              <a href="https://github.com/rummu/Facial-Recognition-Based-Music-Recommendation-Application">Link</a>
+              <ul class="mb-0">
+                <li>Developed a facial expression recognition system using AI (Neural Networks) that
+                  recommends songs based on detected emotions.
+                </li>
+                <li>Upon detecting facial expressions, the system directs users to Spotify to access
+                  recommended songs. </li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <rect width="100%" height="100%" fill="#55595c"></rect>
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/face_recognition.jpg" width="100%" height="100%" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-md-6 portfolio-item second">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">Deep Learning Model for Handwritten Digit Recognition using InceptionNet
+              </h6>
+              <a
+                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/Inception/inception-cnn-implementation.ipynb">Link</a>
+              <ul class="mb-0">
+                <li>Implemented the InceptionNet architecture, incorporating custom InceptionBlocks to
+                  extract hierarchical features from the input images effectively.
+                </li>
+                <li>Generated a confusion matrix to analyze the model's performance on individual
+                  classes and identify potential areas for improvement.</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/inception.jpg" width="100%" height="100%" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 portfolio-item second">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">Advancing MNIST Digit Recognition with ResNet-based CNNs</h6>
+              <a
+                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/Resnet/resnet-cnn-implementation.ipynb">Link</a>
+              <ul class="mb-0">
+                <li>Utilized the BasicBlock structure to build a robust and efficient CNN model for
+                  digit recognition
+                </li>
+                <li>Utilized the CrossEntropyLoss function as the loss criterion and the Stochastic
+                  Gradient Descent (SGD) optimizer with momentum for efficient model optimization</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/Resnet.jpg" width="100%" height="100%" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 portfolio-item second">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">VGG16-based Convolutional Neural Networks</h6>
+              <a
+                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/VGG/vgg-cnn-implementation.ipynb">Link</a>
+              <ul class="mb-0">
+                <li>Preprocessed the CIFAR-100 dataset with image resizing and normalization.</li>
+                <li>Achieved a high accuracy rate on the validation set, demonstrating the model's
+                  effectiveness.</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/VGG.jpg" width="100%" height="100%" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 portfolio-item second">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">MNIST Digit Recognition using EfficientNet </h6>
+              <a
+                href="https://github.com/rummu/Pytorch/blob/main/CNN_architecture/efficientnet/efficientnet-cnn-architecture.ipynb">Link</a>
+              <ul class="mb-0">
+                <li>Implemented an EfficientNet-based deep learning model for digit recognition.</li>
+                <li>Achieved high accuracy on the test set, demonstrating the model's effectiveness for
+                  digit recognition.
+                  Visualized the confusion matrix to assess model performance.</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/Efficientnet.jpg" width="100%" height="100%" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 portfolio-item forth">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">WINEQUALITY PREDICTION </h6>
+              <a
+                href="https://github.com/rummu/Winequality_prediction/blob/main/Winequality_prediction%20(1).ipynb">Link</a>
+              <ul class="mb-0">
+                <li>Predicted the quality of wine using DecisionTreeClassifier</li>
+                <li>Used PCA for selecting the features,Clustering is done with the help of
+                  KMeans,DBSCAN and pruning
+                  the dataset while selecting least ccp_alpha parameter.</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title> -->
+                <!-- <rect width="100%" height="100%" fill="#55595c"></rect> -->
+                <!-- <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
+                <image xlink:href="img/wine.png" width="100%" height="100%" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 portfolio-item forth">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">PREDICTING DIABETES</h6>
+              <a href="https://github.com/rummu/Diabetes_Prediction/blob/main/Diabetes_prediction.ipynb">Link</a>
+              <ul class="mb-0">
+                <li>Made a model using ML algorithm which has been trained and tested using
+                  model_selection module</li>
+                <li>Converted the dataset into standard value using standardization method . Predicted
+                  the tested value
+                  which gives an accuracy of 80%</li>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title>
                                 <rect width="100%" height="100%" fill="#55595c"></rect>
                                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/Diabetes.jpg" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+                <image xlink:href="img/Diabetes.jpg" width="100%" height="100%" />
+              </svg>
+            </div>
+          </div>
+        </div>
 
-                <div class="col-md-6 portfolio-item fifth">
-                    <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
-                        <div class="col p-3 d-flex flex-column position-static">
-                            <h6 class="mb-0">Movie Recommendation System using Collaborative Filtering</h6>
-                            <a
-                                href="https://github.com/rummu/Movie-Recommendation-System/blob/main/Movie%20recommendation(content%20based%20filtering).ipynb">Link</a>
-                            <ul class="mb-0">
-                                <li>It predicts user preferences based on the behavior of similar users.</li>
-                                <li>Data visualization techniques were employed using Matplotlib and Seaborn to gain
-                                    insights into the data</li>
-                                <li>A Pivot Table was utilized to recommend movies based on user preferences and improve
-                                    the model.</li>
+        <div class="col-md-6 portfolio-item fifth">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-150 position-relative">
+            <div class="col p-3 d-flex flex-column position-static">
+              <h6 class="mb-0">Movie Recommendation System using Collaborative Filtering</h6>
+              <a
+                href="https://github.com/rummu/Movie-Recommendation-System/blob/main/Movie%20recommendation(content%20based%20filtering).ipynb">Link</a>
+              <ul class="mb-0">
+                <li>It predicts user preferences based on the behavior of similar users.</li>
+                <li>Data visualization techniques were employed using Matplotlib and Seaborn to gain
+                  insights into the data</li>
+                <li>A Pivot Table was utilized to recommend movies based on user preferences and improve
+                  the model.</li>
 
-                            </ul>
-                        </div>
-                        <div class="col-auto d-none d-lg-block">
-                            <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                                focusable="false">
-                                <!-- <title>Placeholder</title>
+              </ul>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+              <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img"
+                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <!-- <title>Placeholder</title>
                                 <rect width="100%" height="100%" fill="#55595c"></rect>
                                 <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text> -->
-                                <image xlink:href="img/movie.jpg" width="100%" height="100%" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-
-
-
+                <image xlink:href="img/movie.jpg" width="100%" height="100%" />
+              </svg>
             </div>
+          </div>
         </div>
+
+
+
+      </div>
     </div>
+  </div>
 
-    <!-- Projects End -->
+  <!-- Projects End -->
 
 
 
 
-    <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
-        <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">CONTACT ME</h1>
-                </div>
-                <!-- <div class="col-lg-6 text-lg-end">
+  <!-- Contact Start -->
+  <div class="container-xxl pb-5" id="contact">
+    <div class="container py-5">
+      <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="col-lg-6">
+          <h1 class="display-5 mb-0">CONTACT ME</h1>
+        </div>
+        <!-- <div class="col-lg-6 text-lg-end">
                     <a class="btn btn-primary py-3 px-5" href="">Say Hello</a>
                 </div> -->
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="mb-2">Country:</p>
-                    <h3 class="fw-bold">India</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Call me:</p>
-                    <h3 class="fw-bold">+91 7982364612</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Mail me:</p>
-                    <h3 class="fw-bold">rummanahmad05@gamil.com</h3>
-                    <hr class="w-100">
-                    <p class="mb-2">Follow me:</p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href="https://twitter.com/RummanAhmad9"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/rumman.ahmad.948"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href="https://github.com/rummu"><i
-                                class="fab fa-github"></i></a>
-                        <a class="btn btn-square btn-primary me-2"
-                            href="https://www.linkedin.com/in/rumman-ahmad-205255210/"><i
-                                class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
-                    <form id="mailForm">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                    <label for="name">Your Name</label>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-floating">
-                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                    <label for="email">Your Email</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    <label for="subject">Subject</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-floating">
-                                    <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                        style="height: 100px"></textarea>
-                                    <label for="message">Message</label>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+      </div>
+      <div class="row g-5">
+        <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+          <p class="mb-2">Country:</p>
+          <h3 class="fw-bold">India</h3>
+          <hr class="w-100">
+          <p class="mb-2">Call me:</p>
+          <h3 class="fw-bold">+91 7982364612</h3>
+          <hr class="w-100">
+          <p class="mb-2">Mail me:</p>
+          <h3 class="fw-bold">rummanahmad05@gamil.com</h3>
+          <hr class="w-100">
+          <p class="mb-2">Follow me:</p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square btn-primary me-2" href="https://twitter.com/RummanAhmad9"><i
+                class="fab fa-twitter"></i></a>
+            <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/rumman.ahmad.948"><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-square btn-primary me-2" href="https://github.com/rummu"><i class="fab fa-github"></i></a>
+            <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/rumman-ahmad-205255210/"><i
+                class="fab fa-linkedin-in"></i></a>
+          </div>
         </div>
-    </div>
-    <!-- Contact End -->
-
-
-
-
-    <!-- Copyright Start -->
-    <div class="container-fluid bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom text-secondary" href="#">Rumman Ahmad</a>, All Right Reserved.
+        <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+          <!-- <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p> -->
+          <form id="mailForm" method="POST" onsubmit="submitForm(event)">
+            <input type="hidden" name="_next" value="https://rummu.github.io/Portfolio/">
+            <input type="hidden" name="_captcha" value="false">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                  <label for="name">Your Name</label>
                 </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+                  <label for="email">Your Email</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject">
+                  <label for="subject">Subject</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea class="form-control" name="message" placeholder="Leave a message here" id="message"
+                    style="height: 100px"></textarea>
+                  <label for="message">Message</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+              </div>
             </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
+  <!-- Contact End -->
+
+
+
+
+  <!-- Copyright Start -->
+  <div class="container-fluid bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+          &copy; <a class="border-bottom text-secondary" href="#">Rumman Ahmad</a>, All Right Reserved.
+        </div>
+      </div>
     </div>
-    <!-- Copyright End -->
+  </div>
+  </div>
+  <!-- Copyright End -->
 
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/typed/typed.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script>
+    function submitForm(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+      // Get the form element
+      const form = document.getElementById("mailForm");
+
+      // Perform your form validation here if needed
+      // ...
+
+      // Serialize the form data
+      const formData = $(form).serialize();
+
+      // Make an AJAX request to submit the form data
+      $.ajax({
+        type: "POST",
+        url: "https://formsubmit.co/adeelabdella@gmail.com",
+        data: formData,
+        dataType: "text",
+        success: function (response) {
+          // Show the success alert
+          alert("Form submitted successfully!");
+
+          // Reset the form after successful submission
+          form.reset();
+        },
+        error: function (xhr, status, error) {
+          console.error("AJAX Error:", status, error);
+          alert("Form submission failed. Please try again later.");
+        }
+      });
+    }
+  </script>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 </body>
-
-
-<script>
-    document.getElementById("mailForm").addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const subject = document.getElementById("subject").value;
-        const message = document.getElementById("message").value;
-
-        const formData = {
-            name: name,
-            email: email,
-            subject: subject,
-            message: message
-        };
-
-        console.log(formData);
-
-        require('dotenv').config()
-        const emailjs = require('emailjs')
-
-        emailjs.send(process.env.EMAILJS_SERVICE_ID, process.env.EMAILJS_TEMPLATE_ID, formData, {
-            from_name: formData.name,
-            to_name: "Rumman Ahmad",
-            from_email: formData.email,
-            to_email: "rummanahmad05@gmail.com",
-            message: formData.message,
-        }, process.env.EMAILJS_PUBLIC_KEY).then(() => window.alert('Success!'), (err) => {
-            window.alert('Failed!')
-        })
-        // // Make API request using fetch
-        // fetch("http://127.0.0.1:5000/mail", {
-        //     method: "POST",
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(formData),
-        // })
-        //     .then((response) => response.json())
-        //     .then((data) => {
-        //         // Handle the response from the API
-        //         // Assuming the response contains the output HTML
-        //         const outputHtml = data.html;
-
-        //         // Display the output HTML on the page
-        //         document.getElementById("outputContainer").innerHTML = outputHtml;
-        //     })
-        //     .catch((error) => {
-        //         console.error("Error sending mail:", error);
-        //     });
-    });
-</script>
-
 
 </html>
