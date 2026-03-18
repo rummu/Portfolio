@@ -140,8 +140,12 @@ export default function VoiceAvatar() {
                 body: JSON.stringify({ message: text }),
             });
             const data = await res.json();
-            const botResponse = data.answer || "Sorry, I could not generate a response.";
-            speak(botResponse);
+
+            if (data.error) {
+                speak(`I'm sorry, I ran into an error: ${data.error}`);
+            } else {
+                speak(data.answer || "Sorry, I could not generate a response.");
+            }
         } catch {
             speak("Sorry, I could not reach the server.");
         }

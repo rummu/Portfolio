@@ -1,0 +1,125 @@
+## ABOUT ME
+Rumman Ahmad is currently pursuing a Masters in Computer Science at the University of Bonn, Germany. He completed his B.Tech in Computer Science and Engineering at Jamia Millia Islamia (2021-2025), graduating with a GPA of 8.65/10. His passion lies in AI, Machine Learning, and Computer Vision. He has applied them in real-world internships at Nikah Forever, Stepping Cloud, and Algoma University.
+
+## EDUCATION
+Jamia Millia Islamia (2021 - 2025): Bachelor of Technology in Computer Science and Engineering. Grade: 8.65/10 (188 ECTS).
+Relevant Coursework: Data Structures and Algorithms, Object-Oriented Programming, Computer Networks, Operating Systems, DBMS, Software Engineering, Computer Vision, Compiler Design, Machine Learning, NLP, Deep Learning.
+University of Bonn, Germany: Masters in Computer Science (Starting 2025).
+
+## SKILLS
+Languages: Java, C/C++, Python.
+Data Science: Data Science, Computer Vision, Deep Learning, Data Collection, Data Mining, Machine Learning, Image Segmentation, Data Analysis, Image Analysis, Image Processing, Recurrent Neural Network, Natural Language Processing, Statistics & Statistical Modeling, Data Visualisation, Data Processing, Agentic AI, Transformer.
+Libraries: Python NLTK, REGEX (Python), Matplotlib, Tensorflow, Keras, OpenCV, PyTorch, Numpy, Pandas, Scikit Learn, Langchain, Ollama.
+Technologies/Framework: Python Flask, NodeJS, ReactJs, Django, NextJS.
+Developer Tools: GIT version control, Linux Command, Azure, AWS, Linux (Terminal Commands, Bash/Shell), Digital Ocean, Oracle, Jira.
+Databases: MySQL, MongoDB, PostgreSQL.
+Data Warehouse: Amazon Redshift, Snowflake.
+
+## INDUSTRY EXPERIENCE
+Nikah Forever — Machine Learning Engineer (Full-time), 2 Sep 2025 - 17 February 2026, New Delhi, India.
+Experience Highlights in Predictive Modeling & Deployment:
+- Ongoing Work — Dynamic Pricing: Currently designing and testing ML-driven dynamic pricing strategies (demand modeling, price elasticity, and A/B-tested policies) to maximize revenue while maintaining customer satisfaction.
+- ML Engineering: Researched, built, and designed self-running AI systems to automate predictive modeling workflows end-to-end.
+- Data Balancing: Mitigated class bias using Under-Sampling, SMOTE, and Genetic Algorithms, improving fairness and model stability.
+- Feature Encoding: Applied One-Hot Encoding for categorical variables, achieving a 71% success rate in predicting users likely to purchase Premium Plans.
+- Cloud Deployment: Containerized and deployed the production model on AWS for scalable, low-latency inference.
+- Business Impact: Drove a 40% increase in company profits and delivered significant time savings through automation and improved targeting.
+
+Stepping Cloud — Data Science Engineer Intern, 15 Mar 2024 - 15 Aug 2024, New Delhi, India.
+Experience Highlights in Data Engineering & Analytics:
+- ETL Pipeline Development: Built a robust ETL pipeline to automate data ingestion and transformation from AWS S3 to PostgreSQL, and further to Snowflake, ensuring structured, query-ready data.
+- Data Integration: Applied advanced Python RegEx techniques to accurately map and align base entities with client-specific database entities, streamlining integration processes.
+- API Development: Designed and deployed RESTful APIs using Django to compute and expose 60+ key business metrics (e.g., attrition rates, span of control, employee movement analytics).
+- Business Insights: Leveraged Snowflake Cortex to uncover actionable insights, empowering data-driven business strategies.
+- Forecasting & Planning: Utilized Snowflake Forecasting to project organizational metrics over a 5-year horizon, supporting long-term workforce planning and strategic decision-making.
+
+Goalwit Technologies — Machine Learning Engineer Intern, 16 Jun 2022 - 3 Aug 2023, New Delhi, India.
+- Enhanced pre-trained models by developing and designing autonomous AI systems for predictive modeling.
+- Utilized undersampling techniques and ML algorithms to identify potential profiles likely to purchase premium plans. Successfully deployed on AWS.
+- Built self-running AI systems to automate predictive models.
+- Created accurate model using SMOTE techniques predicting potential Premium Plan buyers.
+- Designed Ranking System in Python for efficient targeting. Deployed on Digital Ocean.
+
+Nicheby — Frontend Engineer Intern, 1 Feb 2022 - 28 Jun 2022.
+- Worked as a Frontend Engineer.
+- Utilized ReactJS, JavaScript, and Bootstrap to create the company UI.
+
+## RESEARCH EXPERIENCE
+Algoma University — Mitacs GRI'24 Intern (Full-time), 3 Jun 2024 - 28 Aug 2024, Sault Ste. Marie, Ontario, Canada.
+Experience Highlights in E-Commerce Product Recommendation:
+- RNN Expertise: Built sequential models with LSTM and GRU, significantly improving predictive accuracy for sequence-aware recommendations.
+- Deep Learning Optimization: Tuned architectures and training strategies on historical customer behavior to uncover patterns that enhanced product recommendations.
+- Dataset & Evaluation: Assessed performance on the Amazon All Beauty dataset (5K+ user ratings) to validate model effectiveness.
+- System Evaluation: Measured accuracy, efficiency, and scalability to ensure reliable, production-ready recommendations.
+- Performance Improvement: Achieved a 15% reduction in loss, delivering a 30% overall performance boost for downstream applications.
+
+Jamia Millia Islamia — Research Intern, 1 Jan 2023 - 30 Mar 2023, New Delhi, India.
+Implemented a Skip-Connected 2D-CNN Model for Accurate Follicle Detection in Medical Ultrasound Imagery of PCOS:
+- Designed and implemented a sophisticated 2D-CNN model to detect follicles in Medical Ultrasound Imagery.
+- Implemented Skip Connections in the 2D-CNN model to improve training efficiency and accuracy.
+- Demonstrated a high level of proficiency in machine learning by achieving an accuracy of 99% on ultrasound (USG) images.
+
+Jamia Millia Islamia — Undergraduate Research Intern, 4 Oct 2022 - 31 Dec 2022, Remote.
+Performance Evaluation and Comparison:
+- Conducted extensive investigations into the Metabolic Disorder PCOS and its detection in women without infertility.
+- Developed a predictive model that leveraged the combined power of LSTM and 1D-CNN architectures to achieve optimal accuracy.
+- Performance was evaluated using metrics such as loss, accuracy, ROC-AUC curve, and confusion matrix.
+
+## PUBLICATIONS
+2025:
+- "The Evolution of Personalized Medicine in the Age of Big Data and Advanced Analytics" — D. Dhabliya, K. R. Singh, A. Verma, R. Ahmad, S. C, and A. Pattanaik. IEEE (IHCSP), pp. 1–6, Dec. 2024.
+- "Lightweight Deep Learning Model for UAV-Based Disaster Detection" — R. Ahmad, M. H. Akram, and K. Raza. ICICCT, Springer (Accepted).
+- "Similarity Learning–Driven Knowledge Distillation for UAV-Based Disaster Detection" — M. Ahmad, I. A. Khaja, and R. Ahmad. ICICCT, Springer (Accepted).
+
+2024:
+- "SMOTE-Based Automated PCOS Prediction Using Lightweight Deep Learning Models" — R. Ahmad, L. A. Maghrabi, Ishfaq Ahmad Khaja, L. A. Maghrabi, and M. Ahmad. MDPI Diagnostics, vol. 14, no. 19, pp. 2225–2225, Oct. 2024.
+- "Exploring the Integration of Wearable Sensors Technologies in Professional Sports for Enhanced Performance and Injury Prevention" — R. Ahmad, Pavan P.S. IEEE (IHCSP), pp. 1–6, Dec. 2024.
+
+## PROJECTS
+- MobileSR with Transformers: Developed Mobile Super-Resolution (MobileSR) model combining convolutional layers with transformer-based architectures (GPT-2). Improved model convergence with Cosine Annealing. Ensured high-fidelity restoration (SSIM/PSNR). Technologies: Transformers, GPT-2, Super-Resolution.
+- Facial Recognition Music Recommendation: Built AI system detecting user emotions from facial expressions (~90% accuracy). Mapped emotions to curated playlists. Integrated with Spotify. Technologies: Computer Vision, Music.
+- RAG-based Intelligent Chatbot: Built Python-based system leveraging OpenAI GPT models. Designed RAG framework to enhance responses with external knowledge. Secure API/Auth integration. Technologies: RAG, LangChain, LLM.
+- Automated Cricket Commentary Generator: Developed a system to generate automated text commentary for cricket videos. Utilized VGG16 for extracting visual features from video frames and LSTM for generating sequential commentary text based on the visual data. Technologies: Deep Learning, Computer Vision, NLP.
+- Plant Village Disease Classification: Achieved 99.6% accuracy by fine-tuning EfficientNetB3 on the PlantVillage dataset. Implemented a custom callback system for adaptive learning rate scheduling and early stopping. Utilized L1/L2 regularization and Dropout to prevent overfitting. Technologies: Deep Learning, Transfer Learning, Computer Vision.
+- Drowsiness Detection System: Developed a driver drowsiness detection system using YOLOv9 (GELAN-C) to prevent accidents. Trained on a diverse dataset for 200 epochs, achieving significant accuracy (~0.76 mAP50) for real-time 'awake' vs 'drowsy' classification. Technologies: Deep Learning, Computer Vision, YOLOv9.
+- UAV-Based Disaster Detection: Suggested using UAVs and drones for real-time monitoring and surveillance in remote, disaster-affected areas. Presented a customized CNN architecture for disaster categorization. Technologies: Deep Learning, Computer Vision, UAV.
+- HR-VITON Virtual Try-On: Implemented High-Resolution Virtual Try-On Network (HR-VITON) using PyTorch and torchgeometry. The system pairs user images with clothing items, handles occlusions, and generates realistic try-on results. Technologies: Deep Learning, Computer Vision, HR-VITON.
+
+## POSITIONS OF RESPONSIBILITY
+- ML/AI Lead, Google Developer Student Club (2022): Directed a three-day ML/AI workshop with 100+ student attendees. Hosted a Kaggle competition with 50+ teams.
+- IEEE Student Chairman, Jamia Millia Islamia (2024 - 2025).
+- Machine Learning Team Lead, Goalwit Technologies.
+- Co-Founder, EmrText: A SaaS-based platform designed to facilitate communication between doctors and patients, with an integrated AI voice bot to handle patient queries, appointment bookings, and related tasks.
+
+## HONOURS AND AWARDS
+- Erasmus COSI Scholarship (2025–2027 Cohort): Honored with the prestigious Erasmus COSI Scholarship.
+- MITACS Global Link Research Internship, Algoma University (2024): Acknowledged as a MITACS Global Link Research Internship 2024 Scholar.
+- Fatima Predoctoral Fellowship (2024): Awarded the Fatima Predoctoral Fellowship 2024.
+- 3rd Position - HackInit, Jamia Millia Islamia (2023): Secured 3rd position in HackInit hackathon organized by JMI.
+
+## CERTIFICATIONS
+- Oracle Cloud Infrastructure DevOps Professional (1Z0-1109-25), Date: 30/09/2025.
+- Oracle Cloud Infrastructure Data Science Professional (1Z0-1110-25), Date: 01/10/2025.
+
+## NEWS
+- Feb 2026: Received an offer for Masters in Computer Science from University of Bonn, Germany.
+- June 2025: Received an offer for Direct PhD from Case Western Reserve University, Ohio, USA.
+- Feb 2025: Honored with the prestigious Erasmus COSI Scholarship (2025–2027 Cohort).
+- Sep 2024: Elected as IEEE Student Chairman at Jamia Millia Islamia.
+- Aug 2024: Successfully completed MITACS Global Link Research Internship in Canada.
+- Jun 2024: Awarded the Fatima Predoctoral Fellowship.
+
+## HOBBIES
+- Sports & Workout: As a sports and workout enthusiast, he believes in the importance of physical activity for a sharp mind. He is particularly into football (huge Cristiano Ronaldo fan) and maintains a consistent workout routine.
+- Anime: Enjoys watching anime in free time.
+- Travelling: Loves to travel and explore new places. India: Manali, Nanital, Mussoorie, Kashmir, Sikkim, Kerala, Tamil Nadu, Rajasthan. Canada: Toronto, Niagara Falls, Sault Ste. Marie, Sudbury, London.
+
+## CONTACT
+Email: rummanahmad05@gmail.com
+Phone: (+91) 7982364612
+LinkedIn: https://www.linkedin.com/in/rumman-ahmad-205255210/
+GitHub: https://github.com/rummu
+Google Scholar: https://scholar.google.com/citations?user=ciJwylQAAAAJ&hl=en
+Kaggle: https://www.kaggle.com/rummanahmad05
+Website: https://rummu.github.io/Portfolio/
+Location: Fa-34, Jamia Nagar, New Delhi, India

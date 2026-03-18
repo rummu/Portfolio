@@ -30,7 +30,11 @@ export default function Chatbot() {
                 body: JSON.stringify({ message: text }),
             });
             const data = await res.json();
-            setMessages((m) => [...m, { type: "bot", text: data.answer || "Sorry, I could not generate a response." }]);
+            if (data.error) {
+                setMessages((m) => [...m, { type: "bot", text: `⚠️ Error from server: ${data.error}` }]);
+            } else {
+                setMessages((m) => [...m, { type: "bot", text: data.answer || "Sorry, I could not generate a response." }]);
+            }
         } catch {
             setMessages((m) => [...m, { type: "bot", text: "⚠️ Could not reach the AI server. Please make sure the backend is running." }]);
         }
