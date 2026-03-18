@@ -934,6 +934,213 @@ a:hover {
   border-top: 1px solid var(--card-border);
 }
 
+/* ========== VOICE AVATAR ========== */
+.voice-avatar-container {
+  position: fixed;
+  bottom: 85px;
+  left: 20px;
+  right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 9999;
+  gap: 10px;
+}
+
+.voice-mute-toggle {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: var(--t-secondary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-size: 0.8em;
+}
+
+.voice-mute-toggle:hover {
+  background: var(--card-hover-bg);
+  color: var(--t-color);
+}
+
+.voice-minimize-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #ff4444;
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  font-size: 0.9em;
+  z-index: 10000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.voice-minimize-btn:hover {
+  transform: scale(1.1);
+  background: #ff2222;
+}
+
+.voice-avatar-btn {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.voice-avatar-img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 2;
+  border: 3px solid var(--accent);
+  background: white;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.voice-avatar-container.listening .voice-avatar-btn,
+.voice-avatar-container.loading .voice-avatar-btn,
+.voice-avatar-container.speaking .voice-avatar-btn {
+  width: 250px;
+  height: 250px;
+}
+
+.voice-avatar-container.listening .voice-avatar-img,
+.voice-avatar-container.loading .voice-avatar-img,
+.voice-avatar-container.speaking .voice-avatar-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+.voice-avatar-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  background-color: white;
+}
+
+.voice-avatar-container.listening .voice-avatar-img {
+  border-color: #ff4444;
+}
+
+.voice-avatar-container.listening .voice-avatar-ring {
+  border-color: #ff4444;
+  animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+
+.voice-avatar-container.loading .voice-avatar-img {
+  border-color: #adb5bd;
+}
+
+.voice-avatar-container.loading .voice-avatar-ring {
+  border-top-color: var(--accent);
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  animation: spin-ring 1s linear infinite;
+}
+
+.voice-avatar-container.speaking .voice-avatar-img {
+  border-color: var(--accent);
+  animation: avatar-bounce 0.8s ease-in-out infinite alternate;
+}
+
+.voice-avatar-container.speaking .voice-avatar-ring {
+  border-color: var(--accent);
+  animation: soundwave 1s ease-out infinite;
+}
+
+.voice-status {
+  font-size: 0.75em;
+  font-weight: 600;
+  background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  padding: 4px 10px;
+  border-radius: 12px;
+  color: var(--t-secondary);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  animation: fadeInUp 0.3s ease;
+}
+
+.voice-status.listening {
+  color: #ff4444;
+}
+
+.voice-status.speaking {
+  color: var(--accent);
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1.3);
+    opacity: 0;
+  }
+}
+
+@keyframes spin-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes avatar-bounce {
+  0% {
+    transform: translateY(0) scale(1.02);
+    box-shadow: 0 0 10px rgba(43, 210, 132, 0.3);
+  }
+
+  100% {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 0 20px rgba(43, 210, 132, 0.6);
+  }
+}
+
+@keyframes soundwave {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+    border-width: 3px;
+  }
+
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+    border-width: 1px;
+  }
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 768px) {
   .portfolio-layout {

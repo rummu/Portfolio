@@ -12,6 +12,7 @@ import Certifications from "@/components/sections/Certifications";
 import Booking from "@/components/sections/Booking";
 import Chatbot from "@/components/Chatbot";
 import ThemeToggle from "@/components/ThemeToggle";
+import VoiceAvatar from "@/components/VoiceAvatar";
 
 const SECTIONS = {
   aboutme: AboutMe,
@@ -39,6 +40,7 @@ export default function Home() {
       </div>
       <ThemeToggle />
       <Chatbot />
+      <VoiceAvatar />
     </>
   );
 }

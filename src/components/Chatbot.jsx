@@ -84,6 +84,7 @@ export default function Chatbot() {
                         placeholder="Ask about Rumman..."
                         autoComplete="off"
                     />
+
                     <button onClick={sendMessage} disabled={sending} aria-label="Send message">
                         <i className="fa-solid fa-paper-plane" />
                     </button>
