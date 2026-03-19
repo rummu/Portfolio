@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 
-const CHATBOT_API = process.env.NEXT_PUBLIC_CHATBOT_API || "http://localhost:8000/api/chat";
+const CHATBOT_API = process.env.NEXT_PUBLIC_CHATBOT_API || "/api/chat";
 
 export default function VoiceAvatar() {
     const [state, setState] = useState("idle"); // idle, listening, loading, speaking
@@ -10,6 +10,7 @@ export default function VoiceAvatar() {
     const recognitionRef = useRef(null);
     const silenceTimerRef = useRef(null);
     const finalTranscriptRef = useRef("");
+    const hasGreetedRef = useRef(false);
 
     const speakingGifs = [
         "/GIF avatar/metaperson_mix_2.gif",
@@ -85,6 +86,10 @@ export default function VoiceAvatar() {
         if (state === "listening") {
             recognitionRef.current?.stop();
             setState("idle");
+        } else if (!hasGreetedRef.current) {
+            // First click: speak greeting, then auto-start listening
+            hasGreetedRef.current = true;
+            speak("Hey there! I'm RummuAI — feel free to ask me anything about Rumman!");
         } else {
             recognitionRef.current?.start();
             setState("listening");
