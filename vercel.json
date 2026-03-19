@@ -1,7 +1,2 @@
 {
-  "functions": {
-    "api/chat.py": {
-      "runtime": "@vercel/python"
-    }
-  }
 }
