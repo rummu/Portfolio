@@ -3,6 +3,12 @@ import { useState, useRef, useEffect } from "react";
 
 const CHATBOT_API = process.env.NEXT_PUBLIC_CHATBOT_API || "/api/chat";
 
+const SPEAKING_GIFS = [
+    "/GIF%20avatar/metaperson_mix_2.gif",
+    "/GIF%20avatar/metaperson_mix_4.gif",
+    "/GIF%20avatar/metaperson_mix_5.gif",
+];
+
 export default function VoiceAvatar() {
     const [state, setState] = useState("idle"); // idle, listening, loading, speaking
     const [voiceMuted, setVoiceMuted] = useState(false);
@@ -12,18 +18,20 @@ export default function VoiceAvatar() {
     const finalTranscriptRef = useRef("");
     const hasGreetedRef = useRef(false);
 
-    const speakingGifs = [
-        "/GIF avatar/metaperson_mix_2.gif",
-        "/GIF avatar/metaperson_mix_4.gif",
-        "/GIF avatar/metaperson_mix_5.gif" // Assuming mix 5 exists, or it will just gracefully fallback
-    ];
+    // Preload speaking GIFs so they display immediately
+    useEffect(() => {
+        SPEAKING_GIFS.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+    }, []);
 
     useEffect(() => {
         let gifInterval;
         if (state === "speaking") {
             gifInterval = setInterval(() => {
-                setSpeakingGifIndex((prev) => (prev + 1) % speakingGifs.length);
-            }, 600); // Swap GIF every 600ms
+                setSpeakingGifIndex((prev) => (prev + 1) % SPEAKING_GIFS.length);
+            }, 1500); // Swap GIF every 1.5s
         } else {
             setSpeakingGifIndex(0);
         }
@@ -197,10 +205,10 @@ export default function VoiceAvatar() {
                 <div className="voice-avatar-img">
                     <img
                         src={
-                            state === "listening" ? "/GIF avatar/metaperson_confused.gif" :
-                                state === "loading" ? "/GIF avatar/metaperson_mix_3.gif" :
-                                    state === "speaking" ? speakingGifs[speakingGifIndex] :
-                                        "/GIF avatar/metaperson_glad.gif" // Idle state
+                            state === "listening" ? "/GIF%20avatar/metaperson_confused.gif" :
+                                state === "loading" ? "/GIF%20avatar/metaperson_mix_3.gif" :
+                                    state === "speaking" ? SPEAKING_GIFS[speakingGifIndex] :
+                                        "/GIF%20avatar/metaperson_glad.gif" // Idle state
                         }
                         alt="Animated Avatar"
                         width="60"
