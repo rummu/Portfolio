@@ -36,6 +36,7 @@ yarn-error.log*
 # python virtual env
 **/.venv/
 .venv*
+venv/
 
 # vercel
 .vercel

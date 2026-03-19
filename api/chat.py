@@ -9,14 +9,22 @@ from fastapi.middleware.cors import CORSMiddleware
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-# --- Load .env from chatbot-api/ or parent portfolio directory ---
-env_path = Path(__file__).resolve().parent.parent / ".env"
-if not env_path.exists():
-    env_path = Path(__file__).resolve().parent.parent.parent / ".env"
-load_dotenv(dotenv_path=env_path)
+# Fallback to standard loading
+load_dotenv(override=True)
 
 # --- Configuration ---
-GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "")
+GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
+
+if not GEMINI_API_KEY:
+    print("CRITICAL: GEMINI_API_KEY IS COMPLETELY MISSING FROM ENVIRONMENT!")
+else:
+    # Partial mask for security in logs
+    masked = GEMINI_API_KEY[:4] + "..." + GEMINI_API_KEY[-4:]
+    print(f"DIAGNOSTIC: GEMINI_API_KEY Loaded: {masked}")
+    # CONFIGURE IMMEDIATELY at top level
+    genai.configure(api_key=GEMINI_API_KEY)
+print("-" * 50)
+
 EMBEDDING_MODEL = "models/gemini-embedding-001"
 GENERATION_MODELS = ["gemini-2.0-flash", "gemini-2.0-flash-lite", "gemini-2.5-flash"]  # Fallback list
 TOP_K = 3  # Number of relevant chunks to retrieve
@@ -42,7 +50,7 @@ chunk_embeddings = None
 
 def load_knowledge_base():
     """Load and chunk the knowledge base file by section headers."""
-    kb_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "knowledge_base.txt")
+    kb_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "knowledge_base.txt")
     with open(kb_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -86,9 +94,6 @@ def build_faiss_index():
 
     if faiss_index is not None:
         return  # Already built (warm invocation)
-
-    # Configure Gemini
-    genai.configure(api_key=GEMINI_API_KEY)
 
     # Load and chunk knowledge base
     chunks = load_knowledge_base()

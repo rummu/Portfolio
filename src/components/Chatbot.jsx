@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 
-const CHATBOT_API = process.env.NEXT_PUBLIC_CHATBOT_API || "http://localhost:8000/api/chat";
+const CHATBOT_API = process.env.NEXT_PUBLIC_CHATBOT_API || "/api/chat";
 
 export default function Chatbot() {
     const [isOpen, setIsOpen] = useState(false);
