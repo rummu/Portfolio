@@ -1,7 +1,6 @@
 import os
 import time
 import numpy as np
-import faiss
 from pathlib import Path
 from fastapi import FastAPI, Request
 from fastapi.responses import JSONResponse
@@ -43,7 +42,6 @@ app.add_middleware(
 )
 
 # --- Global state (cached across warm invocations) ---
-faiss_index = None
 chunks = []
 chunk_embeddings = None
 
@@ -88,11 +86,21 @@ def get_query_embedding(text: str) -> list:
     return result["embedding"]
 
 
-def build_faiss_index():
-    """Build the FAISS index from knowledge base chunks."""
-    global faiss_index, chunks, chunk_embeddings
+def cosine_similarity(a, b):
+    """Compute cosine similarity between two vectors."""
+    dot = np.dot(a, b)
+    norm_a = np.linalg.norm(a)
+    norm_b = np.linalg.norm(b)
+    if norm_a == 0 or norm_b == 0:
+        return 0.0
+    return dot / (norm_a * norm_b)
 
-    if faiss_index is not None:
+
+def build_embeddings():
+    """Build the embeddings from knowledge base chunks."""
+    global chunks, chunk_embeddings
+
+    if chunk_embeddings is not None:
         return  # Already built (warm invocation)
 
     # Load and chunk knowledge base
@@ -114,26 +122,27 @@ def build_faiss_index():
 
     chunk_embeddings = np.array(embeddings, dtype=np.float32)
 
-    # Build FAISS index (Inner Product for cosine similarity on normalized vectors)
-    dimension = chunk_embeddings.shape[1]
-    faiss.normalize_L2(chunk_embeddings)
-    faiss_index = faiss.IndexFlatIP(dimension)
-    faiss_index.add(chunk_embeddings)
-
 
 def retrieve_relevant_chunks(query: str, top_k: int = TOP_K) -> list:
-    """Retrieve the top-k most relevant chunks for a given query."""
-    query_emb = np.array([get_query_embedding(query)], dtype=np.float32)
-    faiss.normalize_L2(query_emb)
+    """Retrieve the top-k most relevant chunks using cosine similarity."""
+    query_emb = np.array(get_query_embedding(query), dtype=np.float32)
 
-    scores, indices = faiss_index.search(query_emb, top_k)
+    # Compute cosine similarity with all chunk embeddings
+    similarities = []
+    for i, emb in enumerate(chunk_embeddings):
+        sim = cosine_similarity(query_emb, emb)
+        similarities.append((i, sim))
+
+    # Sort by similarity (descending) and take top_k
+    similarities.sort(key=lambda x: x[1], reverse=True)
+    top_results = similarities[:top_k]
 
     results = []
-    for i, idx in enumerate(indices[0]):
+    for idx, score in top_results:
         if idx < len(chunks):
             results.append({
                 "chunk": chunks[idx],
-                "score": float(scores[0][i]),
+                "score": float(score),
             })
     return results
 
@@ -181,8 +190,8 @@ def generate_with_retry(prompt: str, user_message: str) -> str:
 async def chat(request: Request):
     """Handle chat requests with RAG pipeline."""
     try:
-        # Build index on first request (or use cached)
-        build_faiss_index()
+        # Build embeddings on first request (or use cached)
+        build_embeddings()
 
         # Parse request
         body = await request.json()
@@ -194,7 +203,7 @@ async def chat(request: Request):
                 status_code=400,
             )
 
-        # Step 1: Retrieve relevant chunks from FAISS
+        # Step 1: Retrieve relevant chunks using cosine similarity
         relevant_chunks = retrieve_relevant_chunks(user_message)
         context = "\n\n---\n\n".join([r["chunk"] for r in relevant_chunks])
 
@@ -224,11 +233,3 @@ async def chat(request: Request):
 async def chat_options():
     """Handle CORS preflight requests."""
     return JSONResponse(content={}, status_code=200)
-
-
-
-
-# .\.venv\Scripts\python.exe -m uvicorn api.chat:app --reload --port 8000
-
-
-
