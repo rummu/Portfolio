@@ -6,7 +6,7 @@ const CHATBOT_API = process.env.NEXT_PUBLIC_CHATBOT_API || "/api/chat";
 export default function Chatbot() {
     const [isOpen, setIsOpen] = useState(false);
     const [messages, setMessages] = useState([
-        { type: "bot", text: "👋 Hi there! I'm RummuAI, Rumman's personal AI. Ask me anything about his skills, experience, projects, or education!" },
+        { type: "bot", text: "👋 Hey there! I'm RummuAI — feel free to ask me anything about Rumman!" },
     ]);
     const [input, setInput] = useState("");
     const [sending, setSending] = useState(false);
