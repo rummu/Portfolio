@@ -95,8 +95,9 @@ export default function VoiceAvatar() {
             recognitionRef.current?.stop();
             setState("idle");
         } else if (!hasGreetedRef.current) {
-            // First click: speak greeting, then auto-start listening
+            // First click: speak greeting with speaking GIFs, then auto-start listening
             hasGreetedRef.current = true;
+            setState("speaking");
             speak("Hey there! I'm RummuAI — feel free to ask me anything about Rumman!");
         } else {
             recognitionRef.current?.start();
